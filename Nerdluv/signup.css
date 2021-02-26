@@ -1,0 +1,27 @@
+
+form{
+    width: fit-content;
+}
+
+.container{
+border-radius: 10px;
+background-color:lightblue;
+border-style: inset;
+
+
+}
+
+#signup > button{
+    background-color:rosybrown;
+}
+
+.mm{
+    margin-left: 40px ;
+    
+}
+
+legend{
+    padding: 2px;
+    border: 1px solid gray;
+    background-color: white;
+}

@@ -1,42 +1,60 @@
+<head>
+  <meta charset="utf-8" />
+  <title>Sign up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+
 <div id="header">
   <img src="nerdluv.png" alt="banner logo"> <br>
   where meek geeks meet
 </div><br>
 
 
-<form action="action_page.php" style="border:1px solid #ccc">
-   <legend>Personalia:</legend>
-  <div class="container">
+<form method="GET" style="border:1px solid #ccc">
+  
+    <div class="container" >
+      <fieldset>
+        <legend>New User Signup</legend>
+      <label for="Name"><b>Name:</b></label>
+      <input class="mm" type="text" maxlength="16" placeholder="Enter name" name="Name" required><br>
 
-    <label for="Name"><b>Name:</b></label>
-    <input type="text" placeholder="Enter name" name="email" required><br>
+      <label for="Gender"><b>Gender</b></label>
+      <input class="mm" type="radio" name="Gender" value="Male">
+      <label for="Male">Male</label>
+      <input class="mm" type="radio" name="Gender" value="Female">
+      <label for="Female">Female</label><br>
 
-    <label for="Gender"><b>Gender</b></label>
-    <input type="radio" name="Gender" value="Male">
-    <label for="Male">Male</label>
-    <input type="radio" name="Gender" value="Female">
-    <label for="Female">Female</label><br>
+      <label for="Age"><b>Age:</b></label>
+      <input class="mm" type="Age" maxlength="2" placeholder="Age" name="Age" required><br>
 
-    <label for="Age"><b>Age:</b></label>
-    <input type="Age" placeholder="Age" name="Age" required><br>
+      <label for="Perosanality Type"><b>Perosanality Type:</b></label>
+      <input class="mm" type="Perosanality Type" maxlength="4" name="Perosanality Type" required> <a
+        href="http://humanmetrics.com/cgi-win/JTypes2.asp">
+        <span style="color: red;">(Don't know your type?)</span></a> <br>
 
-    <label for="Perosanality Type"><b>Perosanality Type:</b></label>
-    <input type="Perosanality Type" name="Perosanality Type" required> <a
-      href="http://humanmetrics.com/cgi-win/JTypes2.asp">
-      <span style="color: red;">(Don't know your type?)</span></a> <br>
-      
       <label for="OS"> Favorite OS:</label>
-      <select name="OS">
-          <option value="FPP">Widnows</option>
-          <option value="MPP">OS x</option>
-          <option value="STC">Linux</option>
+      <select class="mm" name="OS">
+        <option value="FPP">Widnows</option>
+        <option value="MPP">OS x</option>
+        <option value="STC">Linux</option>
       </select><br>
 
-    <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <label for="Seeking Age"><b>Seeking age:</b></label>
+      <input class="mm" type="text" maxlength="2" placeholder="min" name="MinAge" required> to <input type="text"
+        maxlength="2" placeholder="max" name="MaxAge" required>
 
-    </div>
+
+      <div id="signup">
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+  </fieldset>
 
   </div>
 </form>
+
+<p id="validator">
+  <a href="https://validator.w3.org/check?uri=referer" onclick="this.href='https://validator.w3.org/check?uri=' + 
+document.URL"><img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a> <a
+    href="https://jigsaw.w3.org/css-validator/check/referer"> <img src="https://jigsaw.w3.org/css-validator/images/vcss"
+      alt="Valid CSS!" /></a>
+</p>
