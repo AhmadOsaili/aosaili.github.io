@@ -45,9 +45,8 @@ function Malkovitch() {
             arrayOfWords[i] = " Malkovitch";
         }
     }
-    text.value = arrayOfWords.join(' ');
-    //console.log(arrayOfWords.join(' '));
-}
+    txtinput.value = arrayOfWords.join(' ');
+    }
 
 function Igpay(text1) {
     var arrayOfWords = $("#text").val().split(' ');
