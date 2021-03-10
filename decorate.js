@@ -48,14 +48,4 @@ function Malkovitch() {
     txtinput.value = arrayOfWords.join(' ');
     }
 
-function Igpay(text1) {
-    var arrayOfWords = $("#text").val().split(' ');
-    let consonant = /^[bcdfghjklmnpqrstvwxys]/gi, match, matches = [];
-
-    for (i = 0; i < arrayOfWords.length; i++) {
-        if (match = arrayOfWords[i].match(consonant)) {
-            console.log(match[1]);
-            matches.push(match[1]);
-        }
-    }
 }
