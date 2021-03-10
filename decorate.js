@@ -46,7 +46,6 @@ function Malkovitch() {
 		}
 	}
 	
-	text.value = arrayOfWords.join(' ');
-	//console.log(arrayOfWords.join(' '));
+	txtinput.value = arrayOfWords.join(' ');
 
 }
